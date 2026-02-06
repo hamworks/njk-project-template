@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  {% include '_partial/head.njk' %}
+  <body>
+    {% block header_area %}
+    {% include '_partial/header.njk' %}
+    {% endblock %}
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    {% block footer_area %}
+    {% include '_partial/footer.njk' %}
+    {% endblock %}
+  </body>
+</html>
